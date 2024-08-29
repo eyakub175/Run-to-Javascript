@@ -21,7 +21,24 @@ console.log(cars[0]);
 console.log(cars.toString());
 console.log(typeof cars);
 
+//Accessing the Last Array Element
 
+const fruits = ["Banana", "Orange", "Apple"];
+let fruit = fruits[fruits.length-1];
+console.log(fruit);
+
+
+//Looping Array Elements
+
+
+let flen = fruits.length;
+let temp = 0;
+
+for (let i = 0; i <flen; i++){
+     
+     console.log(fruits[i]);
+     
+}
 
 
 

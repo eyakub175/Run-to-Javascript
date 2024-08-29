@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Arrays</title>
+</head>
+
+<body>
+
+<p>Call a function for each array element:</p>
+<p id="demo"></p>
+ <script>
+    const name = ["Rafi", "Sabbir", "Farhan"];
+    let text = "<ul>";
+         name.forEach(myFunction);
+        
+         text +="</ul>";
+
+        function myFunction(value){
+            text +="<li>"+value+"</li>";
+            console.log(text);
+            
+            
+        }
+        document.getElementById("demo").innerHTML = text;
+
+
+ </script> 
+
+</body>
+</html>
