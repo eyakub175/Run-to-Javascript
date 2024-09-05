@@ -1,0 +1,16 @@
+<html>
+<body>
+   <div id = "output"> </div>
+   <script>
+      const output = document.getElementById("output");
+      let a = 10;
+         (function () {
+            output.innerHTML += "Entering to the function <br/>";
+            var a = 20;
+            output.innerHTML += "The value of a is " + a + "<br>";
+            output.innerHTML += "Exiting to the function <br/>";
+         }());
+         output.innerHTML += "The value of the outside the function is " + a;
+    </script>
+</body>
+</html>

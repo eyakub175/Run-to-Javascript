@@ -1,0 +1,16 @@
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      // test("Top"); // Out of scope
+      if (1) {
+         test("Top"); // In the same scope
+         function test(pos) {
+            document.getElementById("output").innerHTML += 
+            "The function is called from the " + pos + "<br/>";
+         }
+         test("Bottom"); // In the same scope
+      }
+   </script>
+</body>
+</html>

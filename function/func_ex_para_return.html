@@ -1,0 +1,12 @@
+<html>
+<body>
+   <p id = "output"> </p>
+   <script>
+      const sayHello = new Function(
+	  "return function (name) { return `Hello, ${name}` }",
+	  )();    
+      document.getElementById("output").innerHTML = 
+	  sayHello("world"); // Hello, world
+    </script>
+</body>
+</html>
