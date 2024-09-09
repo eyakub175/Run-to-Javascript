@@ -1,0 +1,37 @@
+<html>
+    <body>
+        
+        
+        <p id="demo"></p>
+
+
+        <script>
+
+            //constructor function for person objcet
+
+            function person (first, last , age, id, institute){
+
+                this.first = first;
+                this.last = last;
+                this.age = age;
+                this.id = id;
+                this.institute = "BuBT";
+            }
+                     
+              
+            person.prototype.name = function() {
+                    return this.first + " " + this.last;
+         };
+            
+              
+               const RafiInfo =  new person("Rafi", "Siyam", 22, 175);
+               
+
+               document.getElementById("demo").innerHTML="my father name is" + RafiInfo.name();
+
+               //changing the age of the person
+
+
+        </script>
+    </body>
+</html>

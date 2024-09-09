@@ -1,0 +1,25 @@
+<html>
+<head>
+   <title> JavaScript - Function call() method </title>
+</head>
+<body>
+<p id = "output1"> </p>
+<p id = "output2"> </p>
+<script>
+   function printMessage() {
+      return "The age of the " + this.name + " is " + this.age;
+   }
+   const person1 = {
+      name: "John Doe",
+      age: 22,
+   }
+
+   const person2 = {
+      name: "Jane Doe",
+      age: 40,
+   }
+   document.getElementById("output1").innerHTML = printMessage.call(person1);
+   document.getElementById("output2").innerHTML = printMessage.call(person2);
+</script>
+</body>
+</html>
